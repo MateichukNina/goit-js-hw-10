@@ -22,9 +22,9 @@ const loader = document.querySelector('.loader');
    error.style.display = 'block';
 }
 
- function hideError() {
-   error.style.display = 'none';
- }
+//  function hideError() {
+//    error.style.display = 'none';
+//  }
 
  function showLoader() {
   loader.style.display = 'block';
@@ -60,7 +60,7 @@ breedSelect.addEventListener('change', () => {
   const breedId = breedSelect.value;
 
  showLoader();
-   hideError();
+  
    hideCatInfo();
 
    fetchCatByBreed(breedId)

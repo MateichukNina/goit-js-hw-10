@@ -8,15 +8,10 @@ axios.defaults.headers.common["x-api-key"] = "live_6Gow9TW6tmIclTOC2a7y63FlAytta
 const breedSelect = document.querySelector('.breed-select');
 const catImage = document.querySelector('.cat-image');
 const catContainer = document.querySelector(".cat-info");
-
-const loader = document.querySelector('.loader');
 const error = document.querySelector('.error');
+const loader = document.querySelector('.loader');
 
 
-
- function showLoader() {
-   loader.style.display = 'block';
- }
 
  function hideLoader() {
    loader.style.display = 'none';
@@ -31,6 +26,9 @@ const error = document.querySelector('.error');
    error.style.display = 'none';
  }
 
+ function showLoader() {
+  loader.style.display = 'block';
+}
  function showCatInfo() {
    catContainer.style.display = 'block';
    catImage.style.display = 'block';
@@ -90,4 +88,4 @@ breedSelect.addEventListener('change', () => {
      Notiflix.Notify.failure(error);
    });
   });
-    
+    // спроба задеплоїти ще раз

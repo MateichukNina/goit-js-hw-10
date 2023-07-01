@@ -11,8 +11,8 @@ const catContainer = document.querySelector(".cat-info");
 const error = document.querySelector('.error');
 const loader = document.querySelector('.loader');
 
-
-
+catContainer.style.display = 'none';
+loader.style.display = 'none';
  function hideLoader() {
    loader.style.display = 'none';
    
@@ -23,8 +23,7 @@ const loader = document.querySelector('.loader');
 }
 
 //  function hideError() {
-//    error.style.display = 'none';
-//  }
+//    error.style.display = 'none';  }
 
  function showLoader() {
   loader.style.display = 'block';
